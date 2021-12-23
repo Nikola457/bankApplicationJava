@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Scene2Controller">
+   <children>
+      <Button fx:id="sendPayment" layoutX="196.0" layoutY="338.0" mnemonicParsing="false" onAction="#sendPayment" prefHeight="63.0" prefWidth="235.0" style="-fx-background-color: #017bfe; -fx-background-radius: 15;" text="PAYMENT" textFill="WHITE">
+         <font>
+            <Font name="Webdings" size="29.0" />
+         </font>
+      </Button>
+      <TextField fx:id="paymentAmount" layoutX="92.0" layoutY="182.0" prefHeight="63.0" prefWidth="444.0" />
+      <Label layoutX="203.0" layoutY="29.0" prefHeight="43.0" prefWidth="223.0" text="PAYMENT" textAlignment="CENTER" textFill="#fcac0c">
+         <font>
+            <Font name="Webdings" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="119.0" prefHeight="63.0" prefWidth="337.0" text="INSERT AMOUNT:">
+         <font>
+            <Font name="Webdings" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" layoutX="26.0" layoutY="35.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="46.0" prefWidth="45.0" style="-fx-background-color: #017bfe;" />
+      <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="35.0" layoutY="69.0" rotate="180.0" size="30" />
+      <Label fx:id="wrongPayment" layoutX="196.0" layoutY="289.0" prefHeight="46.0" prefWidth="223.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#017bfe" glyphName="CREDIT_CARD_ALT" layoutX="467.0" layoutY="227.0" size="40" />
+   </children>
+</AnchorPane>
